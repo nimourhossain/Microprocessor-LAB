@@ -1,0 +1,12 @@
+Here is the updated list with your requested questions:
+
+1. Print prime numbers from 1 to 100
+2. Count total prime numbers from 1 to 100
+3. Print sum of even numbers from 1 to 15
+4. Print sum of odd numbers from 1 to 15
+5. Reverse a number
+6. Check if a number is even or odd
+7. Find the factorial of a number
+8. Add two numbers
+9. Check if a number is a palindrome
+10. Generate Fibonacci series

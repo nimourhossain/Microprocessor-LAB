@@ -1,0 +1,15 @@
+Sure! Here's the updated list with **count consonants** added:
+
+1. Reverse a String
+2. Count Vowels in a String
+3. Count Consonants in a String
+4. Check if a String is Palindrome
+5. Convert Lowercase to Uppercase
+6. Find Length of a String
+7. Compare Two Strings
+8. Concatenate Two Strings
+9. Count Words in a String
+10. Replace Character in a String
+11. Find the Frequency of a Character
+
+Want help coding any of these?
