@@ -30,9 +30,12 @@ printn
 mov ah,4ch
 int 21h
 
-define_scan_num
-define_print_num
-define_print_num_uns
-define_get_string
+DEFINE_SCAN_NUM
+DEFINE_PRINT_NUM
+DEFINE_PRINT_NUM_UNS
+DEFINE_PRINT_STRING
+DEFINE_PTHIS
+
+
 
 end
