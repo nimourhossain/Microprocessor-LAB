@@ -4,14 +4,18 @@ org 100h                   ; প্রোগ্রাম শুরু হবে 
 jmp start                  ; start লেবেলে লাফাও
 
 start:
+print "Enter an ODD Number: "
+call scan_num
+printn
+mov di,cx
 mov cx, 1                  ; CX কে 1 দিয়ে শুরু করো (প্রথম বিজোড় সংখ্যা)
 mov bx, 0                  ; BX কে 0 দিয়ে শুরু করো (যোগফল রাখার জন্য)
 
 L:
 add bx, cx                 ; BX-তে CX যোগ করো (যোগফল আপডেট করো)
 add cx, 2                  ; CX-তে 2 যোগ করো (পরবর্তী বিজোড় সংখ্যা)
-cmp cx, 16                 ; CX কি 16 এর কম?
-jl L                       ; যদি কম হয়, আবার লুপ চালাও
+cmp cx, di                 ; CX কি 16 এর কম?
+jle L                       ; যদি কম হয়, আবার লুপ চালাও
 
 print "SUM: "              ; "SUM: " টেক্সট প্রিন্ট করো
 mov ax, bx                 ; AX-এ যোগফল নিয়ে আসো

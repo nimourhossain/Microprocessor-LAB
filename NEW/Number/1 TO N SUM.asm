@@ -4,14 +4,18 @@ org 100h                   ; প্রোগ্রাম শুরু হবে 
 jmp start                  ; start লেবেলে লাফাও
 
 start:
-mov cx, 0                  ; CX কে 0 দিয়ে শুরু করো (প্রথম  সংখ্যা)
+print "Enter your Number: "
+call scan_num
+printn
+mov dx,cx
+mov cx, 1                  ; CX কে 0 দিয়ে শুরু করো (প্রথম  সংখ্যা)
 mov bx, 0                  ; BX কে 0 দিয়ে শুরু করো (যোগফল রাখার জন্য)
 
 L:
 add bx, cx                 ; BX-তে CX যোগ করো (যোগফল আপডেট করো)
 add cx, 1                  ; CX-তে 2 যোগ করো (পরবর্তী  সংখ্যা)
-cmp cx, 16                 ; CX কি 16 এর কম?
-jl L                       ; যদি কম হয়, আবার লুপ চালাও
+cmp cx, dx                 ; CX কি 16 এর কম?
+jle L                       ; যদি কম হয়, আবার লুপ চালাও
 
 print "SUM: "              ; "SUM: " টেক্সট প্রিন্ট করো
 mov ax, bx                 ; AX-এ যোগফল নিয়ে আসো
